@@ -1,16 +1,27 @@
 ﻿@model int
-
+@{
+var saltos=Model-1;
+var ladrillos=0;
+var abajo=0;
+var k=0;
+var g=0;
+}
 
 
     @for (int i = 0 ; i < Model ; i++)
-    {
-         <img  src="~/images/bloque.webp" alt="#">
-    }
-
+    {k=0;
+    g=0;
+    @while( k<saltos-abajo){
+      <img style="width:50px;height:50px;background:white"/>
+      k++;}
+      abajo++;
+    @while(g<abajo){
+         <img src="~/images/bloque.webp"   alt="#"   >  
+         g++;
+    }     <br/>
+     }
+        
+        
+        
     <br/>
-
-
-           
-
-
 
